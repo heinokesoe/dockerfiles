@@ -1,0 +1,31 @@
+%RC = (
+    WRITER_CAN_UPDATE_DESC          =>  1,
+    UMASK                           =>  0077,
+    GIT_CONFIG_KEYS                 =>  '.*',
+    LOG_EXTRA                       =>  1,
+    LOG_DEST                        =>  'syslog',
+    ROLES => {
+        READERS                     =>  1,
+        WRITERS                     =>  1,
+    },
+    ENABLE => [
+            'help',
+            'desc',
+            'info',
+            'perms',
+            'writable',
+            'create',
+            'fork',
+            'mirror',
+            'readme',
+            'sskm',
+            'D',
+            'ssh-authkeys',
+            'git-config',
+            'gitweb',
+    ],
+);
+
+# ------------------------------------------------------------------------------
+# per perl rules, this should be the last line in such a file:
+1;
