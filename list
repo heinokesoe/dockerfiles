@@ -1,6 +1,7 @@
 git-server
 lighttpd
 pptpd
+rclone-web-gui
 telegram-bot-api
 telepush
 webtorrent-tracker
